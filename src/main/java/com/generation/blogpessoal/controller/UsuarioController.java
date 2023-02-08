@@ -37,7 +37,7 @@ public class UsuarioController {
     public ResponseEntity <List<Usuario>> getAll(){
         return ResponseEntity.ok(usuarioRepository.findAll());
     }
-//
+
     @GetMapping("/{id}")
     public ResponseEntity<Usuario> getById(@PathVariable Long id) {
         return usuarioRepository.findById(id)
